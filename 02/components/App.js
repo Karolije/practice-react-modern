@@ -3,9 +3,12 @@ import React from 'react';
 import Box from './Box';
 
 class App extends React.Component {
-    state = {
-        text: 'React HelloWorld Modern!',
-    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            text: 'React HelloWorld Modern!',
+        };
+    }
 
     render() {
         const { text } = this.state;
