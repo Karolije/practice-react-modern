@@ -21,16 +21,16 @@ function ContactForm() {
         e.preventDefault();
 
         const newErrors = {};
-        if (!state.nameAndLastname.trim()) {
+        if (!state.nameAndLastname) {
             newErrors.nameAndLastname = 'Imię i nazwisko jest wymagane.';
         }
-        if (!state.email.trim()) {
+        if (!state.email) {
             newErrors.email = 'Email jest wymagany.';
         }
-        if (!state.subject.trim()) {
+        if (!state.subject) {
             newErrors.subject = 'Temat jest wymagany.';
         }
-        if (!state.message.trim()) {
+        if (!state.message) {
             newErrors.message = 'Treść wiadomości jest wymagana.';
         }
         setError(newErrors);
