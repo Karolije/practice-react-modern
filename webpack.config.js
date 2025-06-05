@@ -1,4 +1,4 @@
-const taskNumber = '03'; // numer przerabianego zadania
+const taskNumber = '05'; // numer przerabianego zadania
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
